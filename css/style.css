@@ -1,0 +1,111 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto);
+
+body {
+  background-color: #FFFFFF;
+  font-family: "Roboto", sans-serif;
+}
+
+/*Titulo*/
+.titulo {
+  z-index: 10;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  text-align: center;
+  font-size: 3rem;
+  color: #4B4B4B;
+  padding-left: 30%; 
+}
+
+#h1 {
+  
+}
+
+/* Card */
+.card {
+  position: relative;
+  height: 450px;
+  width: 900px;
+  margin: 80px auto;
+  background-color: #FFF;
+  -webkit-box-shadow: 10px 10px 93px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 10px 10px 93px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: 10px 10px 93px 0px rgba(0, 0, 0, 0.75);
+}
+
+/* Foto del Empleado */
+.thumbnail {
+  float: left;
+  position: relative;
+  left: 80px;
+  top: -30px;
+  height: 320px;
+  width: 400px;
+  -webkit-box-shadow: 10px 10px 60px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 10px 10px 60px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: 10px 10px 60px 0px rgba(0, 0, 0, 0.75);
+  overflow: hidden;
+}
+
+img.left {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  height: auto;
+  width: 100%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+/* Contenido del lado derecho de la tarjeta */
+.right {
+  margin-left: 520px;
+  margin-right: 20px;
+}
+
+h1 {
+  text-align: center;
+  padding-top: 15px;
+  font-size: 1.3rem;
+  color: #4B4B4B;
+}
+
+.separator {
+  margin-top: 10px;
+  border: 3px solid #C3C3C3;
+}
+
+p {
+  text-align: justify;
+  margin-top: -10px;
+  padding-left: 50px;
+  font-size: 12rem;
+  line-height: 150%;
+  color: #4B4B4B;
+}
+
+/* Numero */
+h5 {
+  position: absolute;
+  left: 30px;
+  bottom: -120px;
+  font-size: 6rem;
+  color: #4B4B4B;
+}
+
+.grid-container {
+  padding-left: 3%;
+  padding-right: 3%;
+  display: grid;
+  grid-template-columns: auto auto auto;
+}
+.grid-item {
+  position: relative;
+  height: 1500%;
+  width: 90%;
+  margin: 3% auto;
+  background-color: #FFF;
+  -webkit-box-shadow: 6px 6px 30px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 6px 6px 30px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: 6px 6px 30px 0px rgba(0, 0, 0, 0.75);
+}
