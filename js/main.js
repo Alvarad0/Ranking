@@ -1,3 +1,27 @@
+$(document).ready(function(){
+  tiempo();
+});
+
+function tiempo(){
+  setTimeout(function() {
+    aparece();
+  },5000);
+}
+
+function tiempo_sec(){
+  setTimeout(function() {
+    $("#segunda_sec").fadeOut(1500);
+    $("#primera_sec").fadeIn(1500); 
+    tiempo();
+  },6000);
+}
+
+function aparece(){
+  $("#primera_sec").fadeOut(1500);
+  $("#segunda_sec").fadeIn(1500); 
+  tiempo_sec();
+}
+
 var temporizador = setTimeout("reloj()",1000);
   
   function reloj(){
@@ -16,4 +40,3 @@ var temporizador = setTimeout("reloj()",1000);
     var temporizador = setTimeout("reloj()",1000);
 
   }
-  

@@ -15,14 +15,14 @@ body {
 #titulo {
   padding-top: 1%;
   text-align: center;
-  font-size: 3rem;
+  font-size: 1rem;
   color: #4B4B4B;
   padding-left: 50%; 
 }
 
 #reloj {
   padding-left: 70%;
-  font-size:9rem;
+  font-size:3rem;
   font-family:sans-serif;
   color:#000;
 }
@@ -30,9 +30,45 @@ body {
 /* Card */
 .card {
   position: relative;
-  height: 450px;
-  width: 900px;
+  height: 300px;
+  width: 550px;
   margin: 80px auto;
+  background-color: #FFF;
+  -webkit-box-shadow: 10px 10px 93px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 10px 10px 93px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: 10px 10px 93px 0px rgba(0, 0, 0, 0.75);
+}
+
+.card_dos {
+  position: relative;
+  height: 320px;
+  width: 550px;
+  margin-top: -260px;
+  margin-left: 3%;
+  background-color: #FFF;
+  -webkit-box-shadow: 10px 10px 93px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 10px 10px 93px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: 10px 10px 93px 0px rgba(0, 0, 0, 0.75);
+}
+
+.card_tres {
+  position: relative;
+  height: 320px;
+  width: 550px;
+  margin-top: -330px;
+  margin-left: 69%;
+  background-color: #FFF;
+  -webkit-box-shadow: 10px 10px 93px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 10px 10px 93px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: 10px 10px 93px 0px rgba(0, 0, 0, 0.75);
+}
+
+.card_animadas {
+  position: relative;
+  height: 300px;
+  width: 300px;
+  margin-top: 60px;
+  margin-left: 0%;
   background-color: #FFF;
   -webkit-box-shadow: 10px 10px 93px 0px rgba(0, 0, 0, 0.75);
   -moz-box-shadow: 10px 10px 93px 0px rgba(0, 0, 0, 0.75);
@@ -43,13 +79,39 @@ body {
 .thumbnail {
   float: left;
   position: relative;
-  left: 80px;
+  left: 9%;
   top: -30px;
-  height: 320px;
-  width: 400px;
-  -webkit-box-shadow: 10px 10px 60px 0px rgba(0, 0, 0, 0.75);
-  -moz-box-shadow: 10px 10px 60px 0px rgba(0, 0, 0, 0.75);
-  box-shadow: 10px 10px 60px 0px rgba(0, 0, 0, 0.75);
+  height: 150px;
+  width: 150px;
+  -webkit-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.75);
+  overflow: hidden;
+}
+
+.thumbnail_dos {
+  float: left;
+  position: relative;
+  left: 9%;
+  top: -60px;
+  height: 150px;
+  width: 150px;
+  -webkit-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.75);
+  overflow: hidden;
+}
+
+.thumbnail_animadas {
+  float: left;
+  position: relative;
+  left: 25%;
+  top: -25px;
+  height: 150px;
+  width: 150px;
+  -webkit-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.75);
   overflow: hidden;
 }
 
@@ -66,7 +128,7 @@ img.left {
 
 /* Contenido del lado derecho de la tarjeta */
 .right {
-  margin-left: 520px;
+  margin-left: 250px;
   margin-right: 20px;
 }
 
@@ -84,9 +146,9 @@ h1 {
 
 p {
   text-align: justify;
-  margin-top: -10px;
-  padding-left: 50px;
-  font-size: 12rem;
+  margin-top: -5px;
+  padding-left: 90px;
+  font-size: 10rem;
   line-height: 150%;
   color: #4B4B4B;
 }
@@ -95,24 +157,22 @@ p {
 h5 {
   position: absolute;
   left: 30px;
-  bottom: -120px;
-  font-size: 6rem;
+  bottom: -50px;
+  font-size: 4rem;
   color: #4B4B4B;
 }
 
 .grid-container {
-  padding-left: 3%;
+  padding-left: 7%;
   padding-right: 3%;
   display: grid;
-  grid-template-columns: auto auto auto;
+  grid-template-columns: auto auto auto auto;
 }
-.grid-item {
-  position: relative;
-  height: 1500%;
-  width: 90%;
-  margin: 3% auto;
-  background-color: #FFF;
-  -webkit-box-shadow: 6px 6px 30px 0px rgba(0, 0, 0, 0.75);
-  -moz-box-shadow: 6px 6px 30px 0px rgba(0, 0, 0, 0.75);
-  box-shadow: 6px 6px 30px 0px rgba(0, 0, 0, 0.75);
+
+.nombre_empleado {
+  position: absolute;
+  left: 30px;
+  bottom: 130px;
+  font-size: rem;
+  color: #4B4B4B;
 }
