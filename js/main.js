@@ -17,8 +17,8 @@ function tiempo_sec(){
 }
 
 function aparece(){
-  $("#primera_sec").fadeOut(1500);
-  $("#segunda_sec").fadeIn(1500); 
+  $("#primera_sec").fadeOut(10);
+  $("#segunda_sec").fadeIn(10); 
   tiempo_sec();
 }
 
