@@ -33,6 +33,7 @@ function aparece(){
   tiempo_sec();
 }
 
+/*Reloj*/
 var temporizador = setTimeout("reloj()",1000);
   
   function reloj(){
@@ -51,3 +52,52 @@ var temporizador = setTimeout("reloj()",1000);
     var temporizador = setTimeout("reloj()",1000);
 
   }
+
+  /*FullScreen*/
+function GoInFullscreen(element) {
+  if(element.requestFullscreen)
+    element.requestFullscreen();
+  else if(element.mozRequestFullScreen)
+    element.mozRequestFullScreen();
+  else if(element.webkitRequestFullscreen)
+    element.webkitRequestFullscreen();
+  else if(element.msRequestFullscreen)
+    element.msRequestFullscreen();
+}
+
+/*Salir de FullScreen */
+function GoOutFullscreen() {
+  if(document.exitFullscreen)
+    document.exitFullscreen();
+  else if(document.mozCancelFullScreen)
+    document.mozCancelFullScreen();
+  else if(document.webkitExitFullscreen)
+    document.webkitExitFullscreen();
+  else if(document.msExitFullscreen)
+    document.msExitFullscreen();
+}
+
+/* Verifica si esta en FullScreen */
+function IsFullScreenCurrently() {
+  var full_screen_element = document.fullscreenElement || document.webkitFullscreenElement || document.mozFullScreenElement || document.msFullscreenElement || null;
+  if(full_screen_element === null)
+    return false;
+  else
+    return true;
+}
+
+$("#goFullScreen").on('click', function() {
+  if(IsFullScreenCurrently())
+    GoOutFullscreen();
+  else
+    GoInFullscreen($("#content").get(0));
+});
+
+$(document).on('fullscreenchange webkitfullscreenchange mozfullscreenchange MSFullscreenChange', function() {
+  if(IsFullScreenCurrently()) {
+    $("#goFullScreen").text('Salir FullScreen');
+  }
+  else {
+    $("#goFullScreen").text('FullScreen');
+  }
+});

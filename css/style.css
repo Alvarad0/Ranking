@@ -353,3 +353,33 @@ h5 {
     opacity: 0; 
   }
 }
+
+/*Botones FullScreen*/
+
+#goFullScreen {
+  z-index: 20;
+  width: 200px;
+  display: block;
+}
+
+#content:-webkit-full-screen {
+  width: 100%;
+  height: 100%;
+  background-color: #FFFFFFFF;
+  margin: 0;
+}
+
+#content:-moz-full-screen {
+  background-color: #FFFFFFFF;
+  margin: 0;
+}
+
+#content:-ms-fullscreen {
+  background-color: #FFFFFFFF;
+  margin: 0;
+}
+
+#content:fullscreen { 
+  background-color: #FFFFFFFF;
+  margin: 0;
+}
