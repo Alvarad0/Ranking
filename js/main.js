@@ -1,6 +1,17 @@
 $(document).ready(function(){
+  loading();
   tiempo();
+  //setTimeout('document.location.reload()',10000); Recarga pagina por tiempo
 });
+
+function loading(){
+  var div1 = document.getElementById('content');
+  var div2 = document.getElementById('loop');
+  setTimeout(function() {
+    div1.style.display="block";
+    div2.style.display="none";
+  },5000);
+}
 
 function tiempo(){
   setTimeout(function() {
@@ -10,15 +21,15 @@ function tiempo(){
 
 function tiempo_sec(){
   setTimeout(function() {
-    $("#segunda_sec").fadeOut(1500);
-    $("#primera_sec").fadeIn(1500); 
+    $("#segunda_sec").fadeOut(100);
+    $("#primera_sec").fadeIn(100); 
     tiempo();
   },6000);
 }
 
 function aparece(){
-  $("#primera_sec").fadeOut(10);
-  $("#segunda_sec").fadeIn(10); 
+  $("#primera_sec").fadeOut(100);
+  $("#segunda_sec").fadeIn(100); 
   tiempo_sec();
 }
 
